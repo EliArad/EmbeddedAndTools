@@ -1,0 +1,5 @@
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Debug\TopazApi.csprojResolveAssemblyReference.cache
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Debug\TopazApi.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Debug\TopazApi.pdb
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Debug\TopazApi.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Debug\TopazApi.pdb

@@ -1,0 +1,12 @@
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\TopazApi.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\TopazApi.pdb
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\TopazControllerLib.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\USB-ISSApi.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\Newtonsoft.Json.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\TopazControllerLib.pdb
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\USB-ISSApi.pdb
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\Newtonsoft.Json.xml
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Release\TopazApi.csprojResolveAssemblyReference.cache
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Release\TopazApi.dll
+C:\Topaz\USB-ISS\TopazMain\TopazApi\obj\Release\TopazApi.pdb
+C:\Topaz\USB-ISS\TopazMain\TopazApi\bin\Release\dln.net.dll

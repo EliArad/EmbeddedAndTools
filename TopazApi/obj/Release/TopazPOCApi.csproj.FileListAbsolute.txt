@@ -1,0 +1,13 @@
+C:\Topaz\POC\TopazPOCApi\bin\Release\TopazPOCApi.dll
+C:\Topaz\POC\TopazPOCApi\bin\Release\TopazPOCApi.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Release\MeasurementsToolsClassLib.dll
+C:\Topaz\POC\TopazPOCApi\bin\Release\PAI2CApi.dll
+C:\Topaz\POC\TopazPOCApi\bin\Release\SLog.dll
+C:\Topaz\POC\TopazPOCApi\bin\Release\PAI2CApi.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Release\MeasurementsToolsClassLib.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Release\SLog.pdb
+C:\Topaz\POC\TopazPOCApi\obj\Release\TopazPOCApi.csprojResolveAssemblyReference.cache
+C:\Topaz\POC\TopazPOCApi\obj\Release\TopazPOCApi.dll
+C:\Topaz\POC\TopazPOCApi\obj\Release\TopazPOCApi.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Release\CouplerLib.dll
+C:\Topaz\POC\TopazPOCApi\bin\Release\CouplerLib.pdb

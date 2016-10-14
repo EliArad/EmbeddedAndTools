@@ -1,0 +1,11 @@
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\bin\Release\ImageListView.dll.config
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\bin\Release\ImageListView.dll
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\bin\Release\ImageListView.pdb
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\bin\Release\tr\ImageListView.resources.dll
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\ImageListView.csprojResolveAssemblyReference.cache
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\Manina.Windows.Forms.ImageListViewResources.resources
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\Manina.Windows.Forms.ImageListViewResources.tr.resources
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\ImageListView.csproj.GenerateResource.Cache
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\tr\ImageListView.resources.dll
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\ImageListView.dll
+C:\Topaz\POC\TopazPOCApp\CodeProject\ImageListView\obj\Release\ImageListView.pdb

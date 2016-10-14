@@ -1,0 +1,13 @@
+C:\Topaz\POC\TopazPOCApi\obj\Debug\TopazPOCApi.csprojResolveAssemblyReference.cache
+C:\Topaz\POC\TopazPOCApi\bin\Debug\TopazPOCApi.dll
+C:\Topaz\POC\TopazPOCApi\bin\Debug\TopazPOCApi.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Debug\CouplerLib.dll
+C:\Topaz\POC\TopazPOCApi\bin\Debug\MeasurementsToolsClassLib.dll
+C:\Topaz\POC\TopazPOCApi\bin\Debug\PAI2CApi.dll
+C:\Topaz\POC\TopazPOCApi\bin\Debug\SLog.dll
+C:\Topaz\POC\TopazPOCApi\bin\Debug\CouplerLib.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Debug\PAI2CApi.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Debug\MeasurementsToolsClassLib.pdb
+C:\Topaz\POC\TopazPOCApi\bin\Debug\SLog.pdb
+C:\Topaz\POC\TopazPOCApi\obj\Debug\TopazPOCApi.dll
+C:\Topaz\POC\TopazPOCApi\obj\Debug\TopazPOCApi.pdb

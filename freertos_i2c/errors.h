@@ -1,0 +1,21 @@
+#ifndef _ERRORS_HEADER_FILE
+#define _ERRORS_HEADER_FILE
+
+typedef enum ERRORS
+{
+
+	e1_FORWARD_CAL_NOT_FOUND = 0x1,
+	e1_REFLECTED_CAL_NOT_FOUND = 0x2
+
+
+
+}ERRORS ;
+
+
+
+
+
+
+
+
+#endif

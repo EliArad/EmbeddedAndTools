@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{357FD5FD-E2B1-4755-90FA-BED63B75E035}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TopazApp</RootNamespace>
+    <AssemblyName>TopazApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TopazControllerLib\TopazApiDefs.cs">
+      <Link>TopazApiDefs.cs</Link>
+    </Compile>
+    <Compile Include="AlgoParamsForms\AlgoTopPercentageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoParamsForms\AlgoTopPercentageForm.Designer.cs">
+      <DependentUpon>AlgoTopPercentageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlgoParamsForms\DRThresholdAlgoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoParamsForms\DRThresholdAlgoForm.Designer.cs">
+      <DependentUpon>DRThresholdAlgoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlgoParamsForms\freqtableform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoParamsForms\freqtableform.Designer.cs">
+      <DependentUpon>freqtableform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildChefDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildChefDemo.Designer.cs">
+      <DependentUpon>BuildChefDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef.Designer.cs">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsRegistry.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPicturesOffline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPicturesOffline.Designer.cs">
+      <DependentUpon>AddPicturesOffline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateNewPAInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateNewPAInfoForm.Designer.cs">
+      <DependentUpon>CreateNewPAInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DebugForms\EqualEnergyGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugForms\EqualEnergyGraphForm.Designer.cs">
+      <DependentUpon>EqualEnergyGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishesForm.Designer.cs">
+      <DependentUpon>DishesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNames.Designer.cs">
+      <DependentUpon>DishNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlgoParamsForms\EqualEnergyAlgoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoParamsForms\EqualEnergyAlgoForm.Designer.cs">
+      <DependentUpon>EqualEnergyAlgoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPictures.Designer.cs">
+      <DependentUpon>AddPictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CopySolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CopySolution.Designer.cs">
+      <DependentUpon>CopySolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\DefrostingMincedBeef3kgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\DefrostingMincedBeef3kgForm.Designer.cs">
+      <DependentUpon>DefrostingMincedBeef3kgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\ThreeCupsTemperaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\ThreeCupsTemperaturesForm.Designer.cs">
+      <DependentUpon>ThreeCupsTemperaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\NineCupsTemperaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\NineCupsTemperaturesForm.Designer.cs">
+      <DependentUpon>NineCupsTemperaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\EightCupsTemperaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\EightCupsTemperaturesForm.Designer.cs">
+      <DependentUpon>EightCupsTemperaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\FiveCupsTemperaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\FiveCupsTemperaturesForm.Designer.cs">
+      <DependentUpon>FiveCupsTemperaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\FourCupsTemperaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\FourCupsTemperaturesForm.Designer.cs">
+      <DependentUpon>FourCupsTemperaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\WaterTempStartStopEffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\WaterTempStartStopEffForm.Designer.cs">
+      <DependentUpon>WaterTempStartStopEffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\WeightlossForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DishNamesParameters\WeightlossForm.Designer.cs">
+      <DependentUpon>WeightlossForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditPAInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditPAInfoForm.Designer.cs">
+      <DependentUpon>EditPAInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EqualEnergyPerDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EqualEnergyPerDR.Designer.cs">
+      <DependentUpon>EqualEnergyPerDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GroupNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GroupNames.Designer.cs">
+      <DependentUpon>GroupNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadTest.Designer.cs">
+      <DependentUpon>LoadTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogoWindow.designer.cs">
+      <DependentUpon>LogoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagedUtensilsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagedUtensilsForm.Designer.cs">
+      <DependentUpon>ManagedUtensilsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpenSolutionAdvancedSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpenSolutionAdvancedSearchForm.Designer.cs">
+      <DependentUpon>OpenSolutionAdvancedSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpenSolutionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpenSolutionsForm.Designer.cs">
+      <DependentUpon>OpenSolutionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PAInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PAInfoForm.Designer.cs">
+      <DependentUpon>PAInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PassFailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PassFailForm.Designer.cs">
+      <DependentUpon>PassFailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PictureDescrptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PictureDescrptionForm.Designer.cs">
+      <DependentUpon>PictureDescrptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\popupPowerSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\popupPowerSelectForm.Designer.cs">
+      <DependentUpon>popupPowerSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PowerMeterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PowerMeterForm.Designer.cs">
+      <DependentUpon>PowerMeterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Preferences.Designer.cs">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SaveSolutionName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SaveSolutionName.Designer.cs">
+      <DependentUpon>SaveSolutionName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestRemark.Designer.cs">
+      <DependentUpon>TestRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TimeForm.Designer.cs">
+      <DependentUpon>TimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapNetwordDrives.cs" />
+    <Compile Include="MYSQL\MySQLConnector.cs" />
+    <Compile Include="MYSQL\Queris.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenCapture.cs" />
+    <Compile Include="SevenSegment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SevenSegmentArray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestSoundPlayer.cs" />
+    <Compile Include="TOPNAT\AlgoParamsForms\AlgoTopPercentageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\AlgoTopPercentageForm.Designer.cs">
+      <DependentUpon>AlgoTopPercentageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\DRThresholdAlgoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\DRThresholdAlgoForm.Designer.cs">
+      <DependentUpon>DRThresholdAlgoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\EqualEnergyAlgoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\EqualEnergyAlgoForm.Designer.cs">
+      <DependentUpon>EqualEnergyAlgoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\freqtableform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\AlgoParamsForms\freqtableform.Designer.cs">
+      <DependentUpon>freqtableform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\ImageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\ImageDialog.Designer.cs">
+      <DependentUpon>ImageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\ImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\LoadTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\LoadTestForm.Designer.cs">
+      <DependentUpon>LoadTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\QuerisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\QuerisForm.Designer.cs">
+      <DependentUpon>QuerisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\TestSummeryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\TestSummeryForm.Designer.cs">
+      <DependentUpon>TestSummeryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\ThumbnailController.cs" />
+    <Compile Include="TOPNAT\ThumbnailFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\tpnatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\tpnatform.Designer.cs">
+      <DependentUpon>tpnatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPNAT\ViewNatPicturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPNAT\ViewNatPicturesForm.Designer.cs">
+      <DependentUpon>ViewNatPicturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TestListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TestListControl.Designer.cs">
+      <DependentUpon>TestListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\EditUser.designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ListUsersOperators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\ListUsersOperators.designer.cs">
+      <DependentUpon>ListUsersOperators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\usersDb.cs" />
+    <Compile Include="ZedChart.cs" />
+    <EmbeddedResource Include="AlgoParamsForms\AlgoTopPercentageForm.resx">
+      <DependentUpon>AlgoTopPercentageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoParamsForms\DRThresholdAlgoForm.resx">
+      <DependentUpon>DRThresholdAlgoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoParamsForms\freqtableform.resx">
+      <DependentUpon>freqtableform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildChefDemo.resx">
+      <DependentUpon>BuildChefDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef.resx">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPicturesOffline.resx">
+      <DependentUpon>AddPicturesOffline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateNewPAInfoForm.resx">
+      <DependentUpon>CreateNewPAInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DebugForms\EqualEnergyGraphForm.resx">
+      <DependentUpon>EqualEnergyGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishesForm.resx">
+      <DependentUpon>DishesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNames.resx">
+      <DependentUpon>DishNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoParamsForms\EqualEnergyAlgoForm.resx">
+      <DependentUpon>EqualEnergyAlgoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPictures.resx">
+      <DependentUpon>AddPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CopySolution.resx">
+      <DependentUpon>CopySolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\DefrostingMincedBeef3kgForm.resx">
+      <DependentUpon>DefrostingMincedBeef3kgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\ThreeCupsTemperaturesForm.resx">
+      <DependentUpon>ThreeCupsTemperaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\NineCupsTemperaturesForm.resx">
+      <DependentUpon>NineCupsTemperaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\EightCupsTemperaturesForm.resx">
+      <DependentUpon>EightCupsTemperaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\FiveCupsTemperaturesForm.resx">
+      <DependentUpon>FiveCupsTemperaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\FourCupsTemperaturesForm.resx">
+      <DependentUpon>FourCupsTemperaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\WaterTempStartStopEffForm.resx">
+      <DependentUpon>WaterTempStartStopEffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DishNamesParameters\WeightlossForm.resx">
+      <DependentUpon>WeightlossForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditPAInfoForm.resx">
+      <DependentUpon>EditPAInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EqualEnergyPerDR.resx">
+      <DependentUpon>EqualEnergyPerDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupNames.resx">
+      <DependentUpon>GroupNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadTest.resx">
+      <DependentUpon>LoadTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogoWindow.resx">
+      <DependentUpon>LogoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagedUtensilsForm.resx">
+      <DependentUpon>ManagedUtensilsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpenSolutionAdvancedSearchForm.resx">
+      <DependentUpon>OpenSolutionAdvancedSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpenSolutionsForm.resx">
+      <DependentUpon>OpenSolutionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PAInfoForm.resx">
+      <DependentUpon>PAInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PassFailForm.resx">
+      <DependentUpon>PassFailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PictureDescrptionForm.resx">
+      <DependentUpon>PictureDescrptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\popupPowerSelectForm.resx">
+      <DependentUpon>popupPowerSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PowerMeterForm.resx">
+      <DependentUpon>PowerMeterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Preferences.resx">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SaveSolutionName.resx">
+      <DependentUpon>SaveSolutionName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestRemark.resx">
+      <DependentUpon>TestRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimeForm.resx">
+      <DependentUpon>TimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TOPNAT\AlgoParamsForms\AlgoTopPercentageForm.resx">
+      <DependentUpon>AlgoTopPercentageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\AlgoParamsForms\DRThresholdAlgoForm.resx">
+      <DependentUpon>DRThresholdAlgoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\AlgoParamsForms\EqualEnergyAlgoForm.resx">
+      <DependentUpon>EqualEnergyAlgoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\AlgoParamsForms\freqtableform.resx">
+      <DependentUpon>freqtableform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\ImageDialog.resx">
+      <DependentUpon>ImageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\LoadTestForm.resx">
+      <DependentUpon>LoadTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\QuerisForm.resx">
+      <DependentUpon>QuerisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\TestSummeryForm.resx">
+      <DependentUpon>TestSummeryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\tpnatform.resx">
+      <DependentUpon>tpnatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPNAT\ViewNatPicturesForm.resx">
+      <DependentUpon>ViewNatPicturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TestListControl.resx">
+      <DependentUpon>TestListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ListUsersOperators.resx">
+      <DependentUpon>ListUsersOperators.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TopazControllerLib\TopazControllerLib.csproj">
+      <Project>{e3aa8c59-0434-4785-aaa5-796347f1f7b2}</Project>
+      <Name>TopazControllerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopazApi\TopazApi.csproj">
+      <Project>{383220c0-7eb9-482d-90e7-402889fdd9c7}</Project>
+      <Name>TopazApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="CodeProject\ImageListView\ImageListView.csproj">
+      <Project>{0c295fb8-c6c6-4a40-9f19-05a43f353a04}</Project>
+      <Name>ImageListView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minced_meat3kg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
